@@ -1,0 +1,11 @@
+<p *ngIf="nome === '15' || nome === '20'">Este é o Meu Componente</p>
+
+<input type="text" (input)= "passarValor ($event.target.value)">
+<br><br>
+{{nome}}
+
+
+<div *ngFor="let item of arrayValores">
+  <p *ngIf="item !== 'Alisson'">{{item}}</p>
+
+</div>
